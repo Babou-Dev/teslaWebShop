@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/modelX.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Bienvenu chez Tesla - Model X</title>
+</head>
+<body>
+  <div class="container">
+
+    <nav>
+      <img class="menu-ico" src="./assets/menu.png" alt="menu-ico">
+      <ul>
+        <li>
+          <img src="./assets/car_icon.png" alt="car-ico">
+          <a href="./index.html">Model S</a>
+          <a href="./model3.html">Model 3</a>
+          <a href="./modelX.html">Model X</a>
+          <a href="./modelY.html">Model Y</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Tesla Model X</h1>
+      <p>Avec le plus grand volume de chargement, la plus grande capacité de remorquage de tous les SUV électriques et de l'espace pour sept adultes, le Model X offre une praticité optimale. Portes avant s'ouvrant et se refermant automatiquement, portes Falcon Wing offrant un accès plus aisé et crochet de remorquage de série vous permettent d'emporter tout ce dont vous avez besoin.</p>
+      <button id="button" type="button">Caractéristiques technique</button>
+    </div>
+    
+    <img src="./assets/ModelX.png" alt="Model X" class="car-image">
+
+    <div class="bottom-menu">
+      <div>
+        <img src="./assets/icon1.png"> <p>262 km/h</p>
+      </div>
+      <div>
+        <img src="./assets/icon2.png"> <p>1020 ch</p>
+      </div>
+      <div>
+        <img src="./assets/icon3.png"> <p>0 à 100 en 2,6 s</p>
+      </div>
+      <div>
+        <img src="./assets/icon4.png"> <p>135.970 €</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        $('.bottom-menu').show(1000);
+      });
+    });
+  </script>
+</body>
+</html>

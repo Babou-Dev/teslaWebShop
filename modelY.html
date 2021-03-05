@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/modelY.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Bienvenu chez Tesla - Model Y</title>
+</head>
+<body>
+  <div class="container">
+
+    <nav>
+      <img class="menu-ico" src="./assets/menu.png" alt="menu-ico">
+      <ul>
+        <li>
+          <img src="./assets/car_icon.png" alt="car-ico">
+          <a href="./index.html">Model S</a>
+          <a href="./model3.html">Model 3</a>
+          <a href="./modelX.html">Model X</a>
+          <a href="./modelY.html">Model Y</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Tesla Model Y</h1>
+      <p>Le Model Y offre une polyvalence maximale et permet à 7 passagers de voyager avec leurs bagages. Les sièges de deuxième rangée peuvent être complètement rabattus individuellement pour créer un espace de rangement flexible permettant de transporter skis, meubles, bagages, etc. Le hayon s'ouvre sur un coffre au seuil bas rendant le chargement et le déchargement facile et rapide.</p>
+      <button id="button" type="button">Caractéristiques technique</button>
+    </div>
+    
+    <img src="./assets/ModelY.png" alt="Model Y" class="car-image">
+
+    <div class="bottom-menu">
+      <div>
+        <img src="./assets/icon1.png"> <p>241 km/h</p>
+      </div>
+      <div>
+        <img src="./assets/icon2.png"> <p>500 ch</p>
+      </div>
+      <div>
+        <img src="./assets/icon3.png"> <p>0 à 100 en 3,7 s</p>
+      </div>
+      <div>
+        <img src="./assets/icon4.png"> <p>80.580 €</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        $('.bottom-menu').show(1000);
+      });
+    });
+  </script>
+</body>
+</html>
